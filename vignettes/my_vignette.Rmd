@@ -1,0 +1,67 @@
+---
+title: "Homework 9 R Package"
+author: "Anh Khoa Vo"
+date: "23rd November 2017"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+This package was created as a requirement for Homework 9 in Stats 547:
+
+In the package Power, I have several functions including: square, reciprocal, and box-cox transformation. In addition, I have special function in the package such as linking character together.  
+
+For example: 
+
+1. If you would like to square some numbers, I have a square function:
+```{r}
+library(Powers)
+x <- square(10)
+x
+```
+
+2. If you would like to reciprocal some number, I have a reciprocal function:
+```{r}
+x <- reciprocal(10)
+x
+```
+
+3. If you would like to transform some numers, I have the box-cox function: 
+
+In the case lambda is not 0:
+```{r}
+x <- boxcox(10,3)
+x
+```
+
+In the case lambda is 0: 
+```{r}
+x <- boxcox(10,0)
+x
+```
+
+4. The reverse box-cox transformation:
+
+In the case lambda is not 0:
+```{r}
+x <- reverse_boxcox(10,3)
+x
+```
+
+In the case lambda is 0:
+```{r}
+x <- reverse_boxcox(10,0)
+x
+```
+
+
+5. For special function in this homework, I created the link function:
+```{r}
+x <- c("Anh", "Khoa", "Vo")
+y <- link(x)
+y
+```
+
+Thank you!!!

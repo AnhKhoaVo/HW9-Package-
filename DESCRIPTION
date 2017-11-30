@@ -1,0 +1,16 @@
+Package: Powers
+Type: Package
+Title: Several simple computations
+Version: 0.1.0
+Author: Anh Khoa Vo
+Maintainer: The package maintainer <a.vo@alumni.ubc.ca>
+Description: Miscellaneous functions in R
+    This package provides you the power, reciprocal, box-cox, reveser box-cox as well as link functions.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
